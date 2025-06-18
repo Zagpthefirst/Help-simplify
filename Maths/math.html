@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Math memorise</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../Pictures/icon.png">
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<p class="light-blue-highlight">Points:</p>
+<ul>
+<li>Set difference is not commutative</li>
+<li>Union,intersection,symmetric difference are commutative and associative</li>
+<li>Union and intersection are distributive over each other</li>
+<li class="end">Compliment is a involution</li>
+<li>f(x)/(x-k) has remainder of f(k)</li>
+<li>If a polynomial appear to have more roots than its degree then all the coefficients are 0</li>
+<li>Squaring can lead to extraneous roots, dividing can lead to loss of roots</li>
+<li>Domain of a function can help to eliminate extraneous roots</li>
+<li>If a root is common then eliminate the x<sup>2</sup> term to find it</li>
+<li>Roots with multiplicity = n are also roots of the first n-1 derivative</li>
+<li class="end">Between 2 roots of a polynomial, there exists at least 1 root of the derivative of the polynomial</li>
+<li>The term between any 2 terms in a AP/GP/HP is the mean(AM/GM/HM respectively) of the 2 terms</li>
+<li>Sigma(&sum;) is a linear operator, it is not distributive over multiplication or division</li>
+<li>When differences of consecutive terms form an AP (in a QP) then the general term is given by T<sub>n</sub> = an<sup>2</sup>+bn+c</li>
+<li>When differences of consecutive terms form a GP then the general term is given by T<sub>n</sub>=ar<sup>n</sup>+b</li>
+<li>If i,j are independent variables in &sum;&sum;(T<sub>i</sub>*T<sub>j</sub>) then, &sum;&sum;(T<sub>i</sub>*T<sub>j</sub>) = (&sum;T<sub>i</sub>)(&sum;T<sub>j</sub>), this can be generalized to any number of independent variables</li>
+<li>If the general term can be expressed as T<sub>n</sub> = &#8723;(V(n)-V(n-1)) then the series is telescopic i.e., &sum;T<sub>n</sub> = &#8723;(V(n)-V(0))</li>
+<li>For V(n)-V(n-a), &sum;T<sub>n</sub> = V(n)+V(n-1)+...+V(n-a)-[V(0)+V(-1)+...+V(-a+1)]</li>
+</ul>
+
+<hr class="Between-light-blue">
+
+<p class="light-blue-highlight">Common non-formulae:</p>
+<ul>
+<li class="end">|(|x|-|y|)| &le; |x±y| &le; |x| + |y|</li>
+<li>Sum of k<sup>th</sup>(k&ne;pn,p is an integer) power of n<sup>th</sup> roots of unity = 0</li>
+<li class="end">Product of n<sup>th</sup> roots of unity = 1 if n is odd , -1 is n is even</li>
+<li><ol style="margin-top: -3px;">
+	<li>n<sup>th</sup> term of an AP = a + (n-1)d </li>
+	<li>n<sup>th</sup> term of a GP = ar<sup>n-1</sup></li>
+	<li>n<sup>th</sup> term of a HP = 1/(a+(n-1)d)</li>
+	<li>n<sup>th</sup> term of a AGP = [a+(n-1)d]r<sup>(n-1)</sup></li>
+</ol></li>
+<li>HM &le; GM &le; AGM &le; AM &le; QM {QM = &radic;<span class="vector">(Σx<sup>2</sup>)/n</span>}</li>
+<li><ol style="margin-top:0px;">
+	<li>Sum of first n natural numbers = n(n+1)/2</li>
+	<li>Sum of squares of the first n natural numbers = n(n+1)(2n+1)/6</li>
+	<li>Sum of cubes of the first n natural numbers = [n(n+1)/2]<sup>2</sup></li>
+</ol></li>
+<li>Sum of first n powers of a = (a-a<sup>n+1</sup>)/(1-a)</li>
+</ul>
+
+<hr class="Between-light-blue">
+
+<p class="light-blue-highlight">Conditions for stuff:</p>
+<p class="red-highlight">Quadratic roots:</p>
+<ul>
+<li style="margin-bottom:5px">(c<sub>1</sub>a<sub>2</sub>-a<sub>1</sub>c<sub>2</sub>)<sup>2</sup> = (b<sub>1</sub>a<sub>2</sub>-a<sub>2</sub>b<sub>1</sub>)(c<sub>1</sub>b<sub>2</sub>-b<sub>1</sub>c<sub>2</sub>) for common root in quadratic</li>
+<li>Roots of a quadratic are greater than a value if af(k) &gt; 0 , -b/2a &gt; k , D ≥ 0</li>
+<li>Roots of a quadratic are lesser than  a value if af(k) &gt; 0 , -b/2a &lt; k , D ≥ 0</li>
+<li>Roots are on either side of a value if af(k) &lt; 0</li>
+<li>Exactly one root of a quadratic is between 2 values if f(k<sub>1</sub>)f(k<sub>2</sub>) &lt; 0</li>
+<li>Both roots of a quadratic are between 2 values if af(k<sub>1</sub>) &gt; 0 , af(k<sub>2</sub>) &gt; 0 , k<sub>1</sub> &lt; -b/2a &lt; k<sub>2</sub> , D ≥ 0</li>
+<li>If one root is bigger than the smaller value and other root is larger than the bigger value then af(k<sub>1</sub>) &lt; 0 , af(k<sub>2</sub>) &lt; 0</li>
+</ul>
+
+<hr class="Between-red">
+
+<p class="red-highlight">Loci in Argand plane:</p>
+<ul>
+<li><ol>
+<li>Point inside a line segment &equiv; |z-z<sub>1</sub>| + |z-z<sub>2</sub>| = |z<sub>1</sub>+z<sub>2</sub>|</li>
+<li>Ellipse &equiv; |z-z<sub>1</sub>| + |z-z<sub>2</sub>| = k , k&gt;|z<sub>1</sub>-z<sub>2</sub>| , e = |z<sub>1</sub>-z<sub>2</sub>|/k</li>
+<li>Ray emitting from one side of a line segment &equiv; |z-z<sub>1</sub>|-|z-z<sub>2</sub>| = |z<sub>1</sub>-z<sub>2</sub>|</li>
+<li>Point on the line but not on the line segment &equiv; |(|z-z<sub>1</sub>|-|z-z<sub>2</sub>|)| = |z<sub>1</sub>-z<sub>2</sub>|</li>
+<li>Hyperbola &equiv; |(|z-z<sub>1</sub>|-|z-z<sub>2</sub>|)| = k , k&lt;|z<sub>1</sub>-z<sub>2</sub>| , e = |z<sub>1</sub>-z<sub>2</sub>|/k</li>
+</ol></li>
+<li><ol>
+<li>Apollonius circle &equiv; |z-z<sub>1</sub>|/|z-z<sub>2</sub>| = k , k &ne; 0,1</li>
+<li>Circle &equiv; |z-z<sub>1</sub>| = r</li>
+<li>Circle with diameter points &equiv; |z-z<sub>1</sub>|<sup>2</sup> + |z-z<sub>2</sub>|<sup>2</sup> = |z<sub>1</sub>-z<sub>2</sub>|<sup>2</sup></li>
+<li>Circle with diameter points &equiv; (z-z<sub>1</sub>)(z&#773;-z&#773;<sub>2</sub>)+(z-z<sub>2</sub>)(z&#773;-z&#773;<sub>1</sub>) = 0</li>
+</ol></li>
+<li><ol>
+<li>Line &equiv; arg(z-z<sub>1</sub>) = θ</li>
+<li>Line with 2 points &equiv; a&#773;z + z&#773;a + b = 0 , a = i(z<sub>2</sub>-z<sub>1</sub>) , b = i(z<sub>1</sub>z&#773;<sub>2</sub>-z&#773;<sub>1</sub>z<sub>2</sub>) , slope = -re(a)/im(a)</li>
+</ol></li>
+<li>Perpendicular bisector &equiv; |z-z<sub>1</sub>| = |z-z<sub>2</sub>|</li>
+<li>Arc &equiv; arg([z-z<sub>1</sub>]/[z-z<sub>2</sub>]) = &alpha;</li>
+<li>Concyclic points &equiv; [(z<sub>4</sub>-z<sub>1</sub>)/(z<sub>2</sub>-z<sub>1</sub>)] *[(z<sub>2</sub>-z<sub>3</sub>)/(z<sub>4</sub>-z<sub>3</sub>)] is real</li>
+<li>Equilateral triangle &equiv; 1/(z<sub>1</sub>-z<sub>2</sub>) + 1/(z<sub>2</sub>-z<sub>3</sub>) + 1/(z<sub>3</sub>-z<sub>1</sub>) = 0</li>
+<li>Section formula for complex number &equiv;
+(mz<sub>2</sub>+nz<sub>1</sub>)/(m+n) for internal and (mz<sub>2</sub>-nz<sub>1</sub>)/(m-n) for external</li>
+</ul>
+
+<hr class="Between-light-blue">
+
+<p class="light-blue-highlight">Formulae:</p>
+<ul>
+<li>Number of power sets = 2<sup>n</sup></li>
+<li><ol style="margin-top:-3px">
+	<li>A-B      = B'-A'</li>
+	<li>A⊆B      = B'⊆A'</li>
+	<li>(A&cup;B)'   = A'&cap;B'</li>
+	<li>(A&cap;B)'   = A'&cup;B'</li>
+	<li>A-(B&cup;C)  = (A-B)&cap;(A-C)</li>
+	<li>n(A&cup;B)   = n(A) + n(B) - n(A&cap;B)</li>
+	<li>n(A&cup;B&cup;C) = n(A) + n(B) + n(C) - n(A&cap;B) - n(B&cap;C) - n(C&cap;A) + n(A&cap;B&cap;C)</li>
+</ol></li>
+<li>&radic;<span class="vector">a+bi</span> =
+±sqrt[{sqrt(a<sup>2</sup> + b<sup>2</sup></span>)+a}/2] + sgn(b)*isqrt[{sqrt(a<sup>2</sup> + b<sup>2</sup>)-a}/2]</li>
+<li>|z<sub>1</sub> &#8723; z<sub>2</sub>| = |z<sub>1</sub>|<sup>2</sup> + |z<sub>2</sub>|<sup>2</sup> &#8723;Re(z<sub>1</sub>z&#773;<sub>2</sub>)</li>
+<li>Distance = |z<sub>1</sub>-z<sub>2</sub>|</li>
+<li><ol style="margin-top:-5px">
+<li>Insertion of n AMs , d = (b-a)/n+1 , A<sub>k</sub> = a + kd</li>
+<li>Insertion of n GMs , r = (b/a)<sup>(1/(n+1))</sup> , G<sub>k</sub> = ar<sup>k</sup></li>
+<li>Insertion of n HMs , D = (a-b)/[(n+1)ab] , 1/H<sub>k</sub> = (1/a) + kD</li>
+</ol>
+<li><ol style="margin-top:-5px">
+	<li>Sum of n terms in AP , S = (n/2)[2a+(n-1)d] = (n/2)[a+a<sub>n</sub>]</li>
+	<li>Sum of n terms in GP , S = a(1-r<sup>n</sup>)/(1-r)</li>
+	<li>Sum of infinite terms in GP {when |r|&lt;1}, S<sub>∞</sub> = a/(1-r)</li>
+	<li>Sum of n terms of in AGP , S(1-r) = a + dr(1-r<sup>n-1</sup>)/(1-r) - [a+(n-1)d]r<sup>n</sup></li>
+</ol></li>
+<li>&sum;<sub>1≤i≤j≤n</sub>[f(i)*f(j)] = [&sum;&sum;(f(i)*f(j))+&sum;<sub>i=j</sub>(f(i)*f(j))]/2</li>
+</ul>
+
+<hr class="Between-light-blue">
+
+<p style="font-weight:bold;margin:0 0;">Home page</p>
+<a href="index.html">Home page</a>
+</body>
+</html>
