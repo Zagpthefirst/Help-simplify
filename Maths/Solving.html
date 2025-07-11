@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Solving</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../Pictures/icon.png">
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<header>
+	<div><a href="../index.html"><span class="define"><img src="../Pictures/Icon.png"><span class="header-tooltip">Homepage</span></span></a></div>
+	<div><input type="search" name="nav-search" placeholder="Search"></div>
+	<div class="subs">
+		<div><a href="../Navigation pages/Biology/Navigation.html"><span class="define"><img src="../Pictures/B.svg"><span class="header-tooltip">Biology</span></span></a></div>
+		<div><a href="../Navigation pages/Physics/Navigation.html"><span class="define"><img src="../Pictures/P.svg"><span class="header-tooltip">Physics</span></span></a></div>
+		<div><a href="../Navigation pages/Chemistry/Navigation.html"><span class="define"><img src="../Pictures/C.svg"><span class="header-tooltip">Chemistry</span></span></a></div>
+		<div><a href="../Navigation pages/Maths/Navigation.html"><span class="define"><img src="../Pictures/M.svg"><span class="header-tooltip">Maths</span></span></a></div>
+		<div><a href="../Navigation pages/Others/List of others.html"><span class="define"><img src="../Pictures/O.svg"><span class="header-tooltip">Other</span></span></a></div>
+		</div>
+</header>
+<p class="light-blue-highlight">Common non-formulae:</p>
+<ul>
+<li class="end">||x|&minus;|y|| &le; |x&PlusMinus;y| &le; |x| &plus; |y|</li>
+<li>Sum of k<sup>th</sup>(k&ne;pn,p is an integer) power of n<sup>th</sup> roots of unity = 0</li>
+<li class="end">Product of n<sup>th</sup> roots of unity = 1 if n is odd , &minus;1 is n is even</li>
+<li><ol style="margin-top: -3px;">
+	<li>n<sup>th</sup> term of an AP = a &plus; (n&minus;1)d </li>
+	<li>n<sup>th</sup> term of a GP = ar<sup>n&minus;1</sup></li>
+	<li>n<sup>th</sup> term of a HP = 1/(a&plus;(n&minus;1)d)</li>
+	<li>n<sup>th</sup> term of a AGP = [a&plus;(n&minus;1)d]r<sup>(n&minus;1)</sup></li>
+</ol></li>
+<li>HM &le; GM &le; AGM &le; AM &le; QM {QM = &radic;<span class="vector">(Σx<sup>2</sup>)/n</span>}</li>
+<li><ol style="margin-top:0px;">
+	<li>Sum of first n natural numbers = n(n&plus;1)/2</li>
+	<li>Sum of squares of the first n natural numbers = n(n&plus;1)(2n&plus;1)/6</li>
+	<li>Sum of cubes of the first n natural numbers = [n(n&plus;1)/2]<sup>2</sup></li>
+</ol></li>
+<li>Sum of first n powers of a = (a&minus;a<sup>n&plus;1</sup>)/(1&minus;a)</li>
+<li><ol style="margin-top:0;">
+<li>Weighted arithmetic mean, A<sub>W</sub> = (w<sub>1</sub>a<sub>1</sub> &plus; w<sub>2</sub>a<sub>2</sub> &plus; w<sub>3</sub>a<sub>3</sub> &plus; ... &plus; w<sub>n</sub>a<sub>n</sub>)/(w<sub>1</sub> &plus; w<sub>2</sub> &plus; w<sub>3</sub> &plus; ... &plus; w<sub>n</sub>)</li>
+<li>Weighted geometric mean,  G<sub>W</sub> = (a<sub>1</sub><sup>w<sub>1</sub></sup> * a<sub>2</sub><sup>w<sub>2</sub></sup> * a<sub>3</sub><sup>w<sub>3</sub></sup> * ... * a<sub>n</sub><sup>w<sub>n</sub></sup>)<sup>[1/(w<sub>1</sub> &plus; w<sub>2</sub> &plus; w<sub>3</sub> &plus; ... &plus; w<sub>n</sub>)]</sup></li>
+<li>Weighted harmonic mean,   H<sub>W</sub> = (w<sub>1</sub> &plus; w<sub>2</sub> &plus; w<sub>3</sub> &plus; ... &plus; w<sub>n</sub>)/(w<sub>1</sub>/a<sub>1</sub>  &plus;  w<sub>2</sub>/a<sub>2</sub>  &plus;  w<sub>3</sub>/a<sub>3</sub>  &plus; ... &plus;  w<sub>n</sub>/a<sub>n</sub>)</li>
+</ol></li>
+<li>Number of ways to complete a and b = number of ways to complete a * number of ways to complete b</li>
+<li>Number of ways to complete either a <span class="define">xor<span class="definition">One or the other but not both</span></span> b = number of ways to complete a  &plus;  number of ways to complete b</li>
+<li>n&excl; = n * (n&minus;1) * (n&minus;2) * ... * 3 * 2 * 1</li>
+<li>Number of permutation with identical elements = number of permutation with all distinct elements/[&prod;[(number of duplicates of ith type)&excl;]]</li>
+<li>&SquareSubset;n,r&SquareSuperset; &plus; &SquareSubset;n,r&minus;1&SquareSuperset; = &SquareSubset;n&plus;1,r&SquareSuperset;</li>
+<li>&SquareSubset;n,r&SquareSuperset; = &SquareSubset;n,n&minus;r&SquareSuperset;</li>
+<li>&sum;&SquareSubset;n,r&SquareSuperset; = 2<sup>n</sup></li>
+<li>&sum;<sub>r&gt;0</sub>(&SquareSubset;n,r&SquareSuperset;) = 2<sup>n</sup> &minus; 1</li>
+</ul>
+
+<hr class="Between-light-blue">
+
+<p class="light-blue-highlight">Formulae:</p>
+<ul>
+<li>Number of power sets = 2<sup>n</sup></li>
+<li><ol style="margin-top:-3px">
+	<li>A&minus;B = B'&minus;A'</li>
+	<li>A&sube;B = B'&sube;A'</li>
+	<li>(A&cup;B)' = A'&cap;B'</li>
+	<li>(A&cap;B)' = A'&cup;B'</li>
+	<li>A&minus;(B&cup;C) = (A&minus;B)&cap;(A&minus;C)</li>
+	<li>n(A&cup;B) = n(A) &plus; n(B) &minus; n(A&cap;B)</li>
+	<li>n(A&cup;B&cup;C) = n(A) &plus; n(B) &plus; n(C) &minus; n(A&cap;B) &minus; n(B&cap;C) &minus; n(C&cap;A) &plus; n(A&cap;B&cap;C)</li>
+</ol></li>
+<li>&radic;<span class="vector">a&plus;bi</span> =
+&PlusMinus;[{sqrt(a<sup>2</sup> &plus; b<sup>2</sup></span>)&plus;a}/2] &PlusMinus; sgn(b)*isqrt[{sqrt(a<sup>2</sup> &plus; b<sup>2</sup>)&minus;a}/2]</li>
+<li>|z<sub>1</sub> &PlusMinus; z<sub>2</sub>| = |z<sub>1</sub>|<sup>2</sup> &plus; |z<sub>2</sub>|<sup>2</sup> &PlusMinus;Re(z<sub>1</sub>z&#773;<sub>2</sub>)</li>
+<li>Distance = |z<sub>1</sub>&minus;z<sub>2</sub>|</li>
+<li><ol style="margin-top:-5px">
+<li>Insertion of n AMs , d = (b&minus;a)/n&plus;1 , A<sub>k</sub> = a &plus; kd</li>
+<li>Insertion of n GMs , r = (b/a)<sup>(1/(n&plus;1))</sup> , G<sub>k</sub> = ar<sup>k</sup></li>
+<li>Insertion of n HMs , D = (a&minus;b)/[(n&plus;1)ab] , 1/H<sub>k</sub> = (1/a) &plus; kD</li>
+</ol>
+<li><ol style="margin-top:-5px">
+	<li>Sum of n terms in AP , S = (n/2)[2a&plus;(n&minus;1)d] = (n/2)[a&plus;a<sub>n</sub>]</li>
+	<li>Sum of n terms in GP , S = a(1 &minus; r<sup>n</sup>)/(1&minus;r)</li>
+	<li>Sum of infinite terms in GP {when |r|&lt;1}, S<sub>&infin;</sub> = a/(1&minus;r)</li>
+	<li>Sum of n terms of in AGP , S(1&minus;r) = a &plus; dr(1 &minus; r<sup>n&minus;1</sup>)/(1&minus;r) &minus; [a&plus;(n&minus;1)d]r<sup>n</sup></li>
+</ol></li>
+<li>&sum;<sub>1≤i≤j≤n</sub>[&fnof;(i)&fnof;(j)] = [&sum;&sum;(&fnof;(i)&fnof;(j))&plus;&sum;<sub>i=j</sub>(&fnof;(i)&fnof;(j))]/2</li>
+<li><sup>n</sup>P<sub>r</sub> = &lt;n,r&gt; = n&excl;/(n&minus;r)&excl;</li>
+<li><sup>n</sup>C<sub>r</sub> = &SquareSubset;n,r&SquareSuperset; = n&excl;/[r&excl;(n&minus;r)&excl;]</li>
+</ul>
+
+<hr class="Between-light-blue"> 
+
+<p class="light-blue-highlight">Tips:</p>
+<ul>
+<li>Set theory is useful in number category questions</li>
+<li>Remember flipping inequalities</li>
+<li>Domain of a function can help to eliminate extraneous roots</li>
+<li>If a root is common between 2 quadratics then eliminate the x<sup>2</sup> term to find it</li>
+<li>For cubic, guess a root and divide by it for solving</li>
+<li>Expressing a series as a telescopic &plus; another part can be helpful for calculating sum of its terms</li>
+<li>If inequalities using sum and product are given then consider the AM,GM inequality</li>
+<li>It is often simpler to use the procedure of multiplying the sum of an AGP by r and subtracting from it, i.e., S*r &minus; S, to find the sum of an AGP</li>
+<li>For number of permutations keeping 2 types of objects separated, it is best to do it manually and carefully utilizing the gaps where the objects can be placed</li>
+<li>For number of combinations of objects of a group together, break it into multiple cases</li>
+<li>For number of permutations it is best to find number of combinations and then arrange to avoid errors</li>
+<li>For circular permutations, <span class="define">there is no difference in where where the first object is placed<span class="definition">so there are n times less permutations</span></span></li>
+<li>If there is a difference between the positions in circular permutation then it must be treated as a linear permutation</li>
+</ul>
+
+<hr class="Between-light-blue">
+
+<div class="middle-topic">
+<a href="To know.html">&#11207;To know</a>
+<a href="Conditional.html">Conditional&#11208;</a>
+</div>
+</body>
+</html>
