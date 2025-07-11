@@ -1,0 +1,22 @@
+<svg
+width="500"
+height="500"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 55 1"
+>
+<defs>
+	<linearGradient id="carbon-halogen" x1="0%" x2="100%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="black"/>
+		<stop offset="75%" stop-color="green" />
+	</linearGradient>
+</defs>
+	<text font-family="Arial,Helvetica,sans-serif">R</text>
+	<rect x="13" width="27" y="-6.5" height="1" fill="url(#carbon-halogen)"/>
+	<text font-family="Arial,Helvetica,sans-serif" fill="green" x="40">X</text>
+	<circle r="1" cx="43.5" cy="-14"/>
+	<circle r="1" cx="47.5" cy="-14"/>
+	<circle r="1" cx="43.5" cy="2"/>
+	<circle r="1" cx="47.5" cy="2"/>
+	<circle r="1" cx="52" cy="-8"/>
+	<circle r="1" cx="52" cy="-4"/>
+</svg>
