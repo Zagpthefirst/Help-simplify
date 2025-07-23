@@ -1,0 +1,25 @@
+<svg
+	height="450"
+	width="450"
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="-25 -50 105 80">
+	<defs>
+		<linearGradient id="carbon-sulphur" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="25%" stop-color="black" />
+			<stop offset="75%" stop-color="yellowgreen" />
+		</linearGradient>
+		<linearGradient id="hydrogen-sulphur" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="25%" stop-color="gray" />
+			<stop offset="75%" stop-color="yellowgreen" />
+		</linearGradient>
+	</defs>
+		<text x="-20" font-family="Arial,Helvetica,sans-serif">R</text>
+		<text fill="yellowgreen" x="20" y="-20" font-family="Arial,Helvetica,sans-serif">S</text>
+		<text fill="gray" x="60" y="0" font-family="Arial,Helvetica,sans-serif">H</text>
+		<line x1="-7" y1="-7" x2="17" y2="-23" stroke="url(#carbon-sulphur)"/>
+		<line x1="34" x2="58" y1="-23" y2="-7" stroke="url(#hydrogen-sulphur)" />
+		<circle r="1" cx="18" cy="-30"/>
+		<circle r="1" cx="21" cy="-34"/>
+		<circle r="1" cx="31" cy="-34"/>
+		<circle r="1" cx="34" cy="-30"/>
+</svg>

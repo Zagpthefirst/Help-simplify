@@ -1,0 +1,44 @@
+<svg
+width="500"
+height="500"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="-100 -100 400 300"
+>
+<defs>
+<linearGradient id="carbon-nitrogen" x1="0%" x2="100%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="black"/>
+		<stop offset="75%" stop-color="skyblue" />
+	</linearGradient>
+	<linearGradient id="nitrogen-carbon" x1="100%" x2="0%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="black"/>
+		<stop offset="75%" stop-color="skyblue" />
+	</linearGradient>
+	<linearGradient id="nitrogen-hydrogen" x1="100%" x2="0%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="gray"/>
+		<stop offset="75%" stop-color="skyblue" />
+	</linearGradient>
+	<linearGradient id="hydrogen-nitrogen" x1="0%" x2="100%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="gray"/>
+		<stop offset="75%" stop-color="skyblue" />
+	</linearGradient>
+</defs>
+
+<text font-family="Arial,Helvetica,sans-serif" fill="skyblue">N</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="black" x="69">R</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="gray" x="-50" y="-30">H</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="black" x="-50" y="30">R</text>
+<line x1="-2" x2="-36" y1="-9" y2="-34" stroke="url(#hydrogen-nitrogen)" />
+<line x1="-2" x2="-36" y1="-1" y2="24" stroke="url(#carbon-nitrogen)" />
+<rect x="15" width="51" y="-5.5" height="1" fill="url(#nitrogen-carbon)"/>
+<circle r="1" cx="8.5" cy="-15" />
+<circle r="1" cx="3.5" cy="-15" />
+<text font-family="Arial,Helvetica,sans-serif" fill="skyblue" x="200">N</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="black" x="269">R</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="black" x="150" y="-30">R</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="black" x="150" y="30">R</text>
+<line x1="198" x2="164" y1="-9" y2="-34" stroke="url(#carbon-nitrogen)" />
+<line x1="198" x2="164" y1="-1" y2="24" stroke="url(#carbon-nitrogen)" />
+<rect x="215" width="51" y="-5.5" height="1" fill="url(#nitrogen-carbon)"/>
+<circle r="1" cx="208.5" cy="-15" />
+<circle r="1" cx="203.5" cy="-15" />
+</svg>

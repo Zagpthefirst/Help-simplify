@@ -11,22 +11,76 @@
 
 <body>
 <header>
-	<div><a href="../index.html"><span class="define"><img src="../Pictures/Icon.png"><span class="header-tooltip">Homepage</span></span></a></div>
-	<div><input type="search" name="nav-search" placeholder="Search"></div>
+	<div><a href="../index.html"><span class="define"><img src="../Pictures/Icon.png" aria-label="link to the website's homepage"><span class="header-tooltip">Homepage</span></span></a></div>
+	<div><search><form><input type="search" name="nav-search" placeholder="Search"></form></search></div>
 	<div class="subs">
-		<div><a href="../Navigation pages/Biology/Navigation.html"><span class="define"><img src="../Pictures/B.svg"><span class="header-tooltip">Biology</span></span></a></div>
-		<div><a href="../Navigation pages/Physics/Navigation.html"><span class="define"><img src="../Pictures/P.svg"><span class="header-tooltip">Physics</span></span></a></div>
-		<div><a href="../Navigation pages/Chemistry/Navigation.html"><span class="define"><img src="../Pictures/C.svg"><span class="header-tooltip">Chemistry</span></span></a></div>
-		<div><a href="../Navigation pages/Maths/Navigation.html"><span class="define"><img src="../Pictures/M.svg"><span class="header-tooltip">Maths</span></span></a></div>
-		<div><a href="../Navigation pages/Others/List of others.html"><span class="define"><img src="../Pictures/O.svg"><span class="header-tooltip">Other</span></span></a></div>
+		<div><a href="../Navigation pages/Biology/Navigation.html"><span class="define"><img src="../Pictures/B.svg" aria-label="link to the biology homepage"><span class="header-tooltip">Biology</span></span></a></div>
+		<div><a href="../Navigation pages/Physics/Navigation.html"><span class="define"><img src="../Pictures/P.svg" aria-label="link to the physics homepage"><span class="header-tooltip">Physics</span></span></a></div>
+		<div><a href="../Navigation pages/Chemistry/Navigation.html"><span class="define"><img src="../Pictures/C.svg" aria-label="link to the chemistry homepage"><span class="header-tooltip">Chemistry</span></span></a></div>
+		<div><a href="../Navigation pages/Maths/Navigation.html"><span class="define"><img src="../Pictures/M.svg" aria-label="link to the maths homepage"><span class="header-tooltip">Maths</span></span></a></div>
+		<div><a href="../Navigation pages/Others/List of others.html"><span class="define"><img src="../Pictures/O.svg" aria-label="link to the other things page"><span class="header-tooltip">Other</span></span></a></div>
 		</div>
 </header>
-<p class="light-blue-highlight">Common non-formulae:</p>
+
+<main>
+
+<section>
+<h1>Common non-formulae:</h1>
 <ul>
-<li class="end">||x|&minus;|y|| &le; |x&PlusMinus;y| &le; |x| &plus; |y|</li>
+<li class="end"><math>
+	<mrow>
+		<mrow>
+			<mo>|</mo>
+			<mrow>
+				<mrow>
+					<mo>|</mo>
+					<mi>x</mi>
+					<mo>|</mo>
+				</mrow>
+				<mo>&minus;</mo>
+				<mrow>
+					<mo>|</mo>
+					<mi>y</mi>
+					<mo>|</mo>
+				</mrow>
+			</mrow>
+			<mo>|</mo>
+		</mrow>
+		<mo>&le;</mo>
+		<mrow>
+			<mo>|</mo>
+			<mrow>
+				<mi>x</mi>
+				<mo>&PlusMinus;</mo>
+				<mi>y</mi>
+			</mrow>
+			<mo>|</mo>
+		</mrow>
+		<mo>&le;</mo>
+		<mrow>
+			<mrow>
+				<mo>|</mo>
+				<mi>x</mi>
+				<mo>|</mo>
+			</mrow>
+			<mo>&plus;</mo>
+			<mrow>
+				<mo>|</mo>
+				<mi>y</mi>
+				<mo>|</mo>
+			</mrow>
+		</mrow>
+	</mrow>
+</math></li>
+<li><math>
+	<mrow>
+		<mtext>Sum of k<sup>th</sup>(k&ne;pn,p is an integer) power of n<sup>th</sup> roots of unity = 0</mtext>
+	</mrow>
+</math>
+</li>
 <li>Sum of k<sup>th</sup>(k&ne;pn,p is an integer) power of n<sup>th</sup> roots of unity = 0</li>
 <li class="end">Product of n<sup>th</sup> roots of unity = 1 if n is odd , &minus;1 is n is even</li>
-<li><ol style="margin-top: -3px;">
+<li><ol style="margin-top:-3px;">
 	<li>n<sup>th</sup> term of an AP = a &plus; (n&minus;1)d </li>
 	<li>n<sup>th</sup> term of a GP = ar<sup>n&minus;1</sup></li>
 	<li>n<sup>th</sup> term of a HP = 1/(a&plus;(n&minus;1)d)</li>
@@ -45,18 +99,20 @@
 <li>Weighted harmonic mean,   H<sub>W</sub> = (w<sub>1</sub> &plus; w<sub>2</sub> &plus; w<sub>3</sub> &plus; ... &plus; w<sub>n</sub>)/(w<sub>1</sub>/a<sub>1</sub>  &plus;  w<sub>2</sub>/a<sub>2</sub>  &plus;  w<sub>3</sub>/a<sub>3</sub>  &plus; ... &plus;  w<sub>n</sub>/a<sub>n</sub>)</li>
 </ol></li>
 <li>Number of ways to complete a and b = number of ways to complete a * number of ways to complete b</li>
-<li>Number of ways to complete either a <span class="define">xor<span class="definition">One or the other but not both</span></span> b = number of ways to complete a  &plus;  number of ways to complete b</li>
+<li>Number of ways to complete either a <span class="define" tabindex="1">xor<span class="definition">One or the other but not both</span></span> b = number of ways to complete a  &plus;  number of ways to complete b</li>
 <li>n&excl; = n * (n&minus;1) * (n&minus;2) * ... * 3 * 2 * 1</li>
 <li>Number of permutation with identical elements = number of permutation with all distinct elements/[&prod;[(number of duplicates of ith type)&excl;]]</li>
-<li>&SquareSubset;n,r&SquareSuperset; &plus; &SquareSubset;n,r&minus;1&SquareSuperset; = &SquareSubset;n&plus;1,r&SquareSuperset;</li>
-<li>&SquareSubset;n,r&SquareSuperset; = &SquareSubset;n,n&minus;r&SquareSuperset;</li>
-<li>&sum;&SquareSubset;n,r&SquareSuperset; = 2<sup>n</sup></li>
-<li>&sum;<sub>r&gt;0</sub>(&SquareSubset;n,r&SquareSuperset;) = 2<sup>n</sup> &minus; 1</li>
+<li>[n,r] &plus; [n,r&minus;1] = [n&plus;1,r]</li>
+<li>[n,r] = [n,n&minus;r]</li>
+<li>&sum;[n,r] = 2<sup>n</sup></li>
+<li>&sum;<sub>r&gt;0</sub>([n,r]) = 2<sup>n</sup> &minus; 1</li>
 </ul>
+</section>
 
-<hr class="Between-light-blue">
+<hr>
 
-<p class="light-blue-highlight">Formulae:</p>
+<section>
+<h1>Formulae:</h1>
 <ul>
 <li>Number of power sets = 2<sup>n</sup></li>
 <li><ol style="margin-top:-3px">
@@ -85,12 +141,14 @@
 </ol></li>
 <li>&sum;<sub>1≤i≤j≤n</sub>[&fnof;(i)&fnof;(j)] = [&sum;&sum;(&fnof;(i)&fnof;(j))&plus;&sum;<sub>i=j</sub>(&fnof;(i)&fnof;(j))]/2</li>
 <li><sup>n</sup>P<sub>r</sub> = &lt;n,r&gt; = n&excl;/(n&minus;r)&excl;</li>
-<li><sup>n</sup>C<sub>r</sub> = &SquareSubset;n,r&SquareSuperset; = n&excl;/[r&excl;(n&minus;r)&excl;]</li>
+<li><sup>n</sup>C<sub>r</sub> = [n,r] = n&excl;/[r&excl;(n&minus;r)&excl;]</li>
 </ul>
+</section>
 
-<hr class="Between-light-blue"> 
+<hr> 
 
-<p class="light-blue-highlight">Tips:</p>
+<section>
+<h1>Tips:</h1>
 <ul>
 <li>Set theory is useful in number category questions</li>
 <li>Remember flipping inequalities</li>
@@ -103,15 +161,21 @@
 <li>For number of permutations keeping 2 types of objects separated, it is best to do it manually and carefully utilizing the gaps where the objects can be placed</li>
 <li>For number of combinations of objects of a group together, break it into multiple cases</li>
 <li>For number of permutations it is best to find number of combinations and then arrange to avoid errors</li>
-<li>For circular permutations, <span class="define">there is no difference in where where the first object is placed<span class="definition">so there are n times less permutations</span></span></li>
+<li>For circular permutations, <span class="define" tabindex="1">there is no difference in where where the first object is placed<span class="definition">so there are n times less permutations</span></span></li>
 <li>If there is a difference between the positions in circular permutation then it must be treated as a linear permutation</li>
 </ul>
+</section>
 
-<hr class="Between-light-blue">
+</main>
 
-<div class="middle-topic">
-<a href="To know.html">&#11207;To know</a>
-<a href="Conditional.html">Conditional&#11208;</a>
-</div>
+<hr>
+
+<footer>
+	<nav>
+	<a href="To know.html">&#11207;To know</a>
+	<a href="Conditional.html">Conditional&#11208;</a>
+	</nav>
+	<address>Contact:<a href="mailto:zagpthefirst@gmail.com">zagpthefirst@gmail.com</a></address>
+</footer>
 </body>
 </html>

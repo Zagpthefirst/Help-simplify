@@ -1,0 +1,38 @@
+<svg 
+width="450"
+height="450"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="-93 0 250 80">
+	<defs>
+		<linearGradient id="nitrogen-oxygen" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="25%" stop-color="skyblue" />
+			<stop offset="75%" stop-color="red" />
+		</linearGradient>
+		<linearGradient id="Carbonyl" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="25%" stop-color="black" />
+			<stop offset="75%" stop-color="red" />
+		</linearGradient>
+		<linearGradient id="carbon-hydrogen" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="25%" stop-color="gray" />
+			<stop offset="75%" stop-color="black" />
+		</linearGradient>
+	</defs>
+	<text font-family="Arial,Helvetica,sans-serif" x="6" y="65">R</text>
+	<text font-family="Arial,Helvetica,sans-serif" fill="red" x="50" y="40">O</text>
+	<line x1="63" x2="93" y1="38" y2="58" stroke="url(#nitrogen-oxygen)"/>
+	<line x1="50" x2="20" y1="38" y2="58" stroke="url(#Carbonyl)"/>
+	<circle cx="51" cy="26" r="1"/>
+	<circle cx="48" cy="30" r="1"/>
+	<circle cx="62" cy="26" r="1"/>
+	<circle cx="65" cy="30" r="1"/>
+	<text font-family="Arial,Helvetica,sans-serif" fill="skyblue" x="95" y="65">N</text>
+	<circle r="1" cx="102.5" cy="68" />
+	<circle r="1" cx="98.5" cy="68" />
+	<line x1="108" x2="138" y1="56" y2="36" stroke="url(#nitrogen-oxygen)"/>
+	<line x1="108" x2="140" y1="60" y2="39" stroke="url(#nitrogen-oxygen)"/>
+	<text font-family="Arial,Helvetica,sans-serif" fill="red" x="140" y="40">O</text>
+	<circle r="1" cx="148.5" cy="42.5" />
+	<circle r="1" cx="151.5" cy="41" />
+	<circle r="1" cx="141" cy="27.5" />
+	<circle r="1" cx="144" cy="26" />
+</svg>

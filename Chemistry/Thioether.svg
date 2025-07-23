@@ -1,0 +1,29 @@
+<svg 
+width="450"
+height="450"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="-93 0 250 80">
+	<defs>
+		<linearGradient id="carbon-sulphur" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop offset="25%" stop-color="black" />
+			<stop offset="75%" stop-color="yellowgreen" />
+		</linearGradient>
+		<linearGradient id="sulphur-carbon" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="25%" stop-color="black" />
+			<stop offset="75%" stop-color="yellowgreen" />
+		</linearGradient>
+		<linearGradient id="carbon-hydrogen" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="25%" stop-color="gray" />
+			<stop offset="75%" stop-color="black" />
+		</linearGradient>
+	</defs>
+	<text font-family="Arial,Helvetica,sans-serif" x="6" y="65">R</text>
+	<text font-family="Arial,Helvetica,sans-serif" fill="yellowgreen" x="51" y="40">S</text>
+	<line x1="63" x2="93" y1="38" y2="58" stroke="url(#sulphur-carbon)"/>
+	<line x1="50" x2="20" y1="38" y2="58" stroke="url(#sulphur-carbon)"/>
+	<circle cx="52" cy="26" r="1"/>
+	<circle cx="49" cy="30" r="1"/>
+	<circle cx="62" cy="26" r="1"/>
+	<circle cx="65" cy="30" r="1"/>
+	<text font-family="Arial,Helvetica,sans-serif" x="95" y="65">R'</text>
+</svg>

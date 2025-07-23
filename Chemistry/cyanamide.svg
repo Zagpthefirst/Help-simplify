@@ -1,0 +1,40 @@
+<svg
+width="500"
+height="500"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="-100 -100 300 300"
+>
+<defs>
+<linearGradient id="carbon-nitrogen" x1="0%" x2="100%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="black"/>
+		<stop offset="75%" stop-color="skyblue" />
+	</linearGradient>
+	<linearGradient id="nitrogen-carbon" x1="100%" x2="0%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="black"/>
+		<stop offset="75%" stop-color="skyblue" />
+	</linearGradient>
+	<linearGradient id="nitrogen-hydrogen" x1="100%" x2="0%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="gray"/>
+		<stop offset="75%" stop-color="skyblue" />
+	</linearGradient>
+	<linearGradient id="hydrogen-nitrogen" x1="0%" x2="100%" y1="0%" y2="0%">
+		<stop offset="25%" stop-color="gray"/>
+		<stop offset="75%" stop-color="skyblue" />
+	</linearGradient>
+</defs>
+
+<text font-family="Arial,Helvetica,sans-serif" fill="skyblue">N</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="skyblue" x="120">N</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="gray" x="-50" y="-30">H</text>
+<text font-family="Arial,Helvetica,sans-serif" fill="gray" x="-50" y="30">H</text>
+<line x1="-2" x2="-36" y1="-9" y2="-34" stroke="url(#hydrogen-nitrogen)" />
+<line x1="-2" x2="-36" y1="-1" y2="24" stroke="url(#hydrogen-nitrogen)" />
+<rect x="15" width="51" y="-5.5" height="1" fill="url(#nitrogen-carbon)"/>
+<rect x="66" width="51" y="-5.5" height="1" fill="url(#carbon-nitrogen)"/>
+<rect x="66" width="51" y="-0.5" height="1" fill="url(#carbon-nitrogen)"/>
+<rect x="66" width="51" y="-10.5" height="1" fill="url(#carbon-nitrogen)"/>
+<circle r="1" cx="135" cy="-2.5" />
+<circle r="1" cx="135" cy="-7.5" />
+<circle r="1" cx="8.5" cy="-15" />
+<circle r="1" cx="3.5" cy="-15" />
+</svg>
