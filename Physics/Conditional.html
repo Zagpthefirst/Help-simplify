@@ -11,119 +11,960 @@
 
 <body>
 <header>
-	<div><a href="../index.html"><span class="define"><img src="../Pictures/Icon.png"><span class="header-tooltip">Homepage</span></span></a></div>
-	<div><input type="search" name="nav-search" placeholder="Search"></div>
+	<div><a href="../index.html"><span class="define"><img src="../Pictures/Icon.png" aria-label="link to the website's homepage"><span class="header-tooltip">Homepage</span></span></a></div>
+	<div><search><form><input type="search" name="nav-search" placeholder="Search"></form></search></div>
 	<div class="subs">
-		<div><a href="../Navigation pages/Biology/Navigation.html"><span class="define"><img src="../Pictures/B.svg"><span class="header-tooltip">Biology</span></span></a></div>
-		<div><a href="../Navigation pages/Physics/Navigation.html"><span class="define"><img src="../Pictures/P.svg"><span class="header-tooltip">Physics</span></span></a></div>
-		<div><a href="../Navigation pages/Chemistry/Navigation.html"><span class="define"><img src="../Pictures/C.svg"><span class="header-tooltip">Chemistry</span></span></a></div>
-		<div><a href="../Navigation pages/Maths/Navigation.html"><span class="define"><img src="../Pictures/M.svg"><span class="header-tooltip">Maths</span></span></a></div>
-		<div><a href="../Navigation pages/Others/List of others.html"><span class="define"><img src="../Pictures/O.svg"><span class="header-tooltip">Other</span></span></a></div>
-		</div>
+		<div><a href="../Navigation pages/Biology/Navigation.html"><span class="define"><img src="../Pictures/B.svg" aria-label="link to the biology homepage"><span class="header-tooltip">Biology</span></span></a></div>
+		<div><a href="../Navigation pages/Physics/Navigation.html"><span class="define"><img src="../Pictures/P.svg" aria-label="link to the physics homepage"><span class="header-tooltip">Physics</span></span></a></div>
+		<div><a href="../Navigation pages/Chemistry/Navigation.html"><span class="define"><img src="../Pictures/C.svg" aria-label="link to the chemistry homepage"><span class="header-tooltip">Chemistry</span></span></a></div>
+		<div><a href="../Navigation pages/Maths/Navigation.html"><span class="define"><img src="../Pictures/M.svg" aria-label="link to the maths homepage"><span class="header-tooltip">Maths</span></span></a></div>
+		<div><a href="../Navigation pages/Others/List of others.html"><span class="define"><img src="../Pictures/O.svg" aria-label="link to the other things page"><span class="header-tooltip">Other</span></span></a></div>
+	</div>
 </header>
-<p class="light-blue-highlight">Conditional:</p>
-<p class="red-highlight">Elastic collision with wall</p>
-<p style="margin-left:12px">If a wall is in the path of a projectile at a distance x from the starting point and the collision is elastic then:</p>
-<ol style="margin-top:-3px">
-<li>t<sub>f</sub> and H remain the same , distance covered after the collision will be in opposite x direction and same y direction as distance covered before collision</li>
-<li>If x ≥ R/2 landing spot is at distance 2x-R from the launch point in the same x direction as initial velocity</li>
-<li>If x ≤ R/2 landing spot is at distance R-2x from the launch point in the opposite x direction to initial velocity</li>
+
+<main>
+<h1>Conditional:</h1>
+<section>
+<h2>Elastic collision with wall</h2>
+<math>
+	<mrow>
+		<mtext>If a wall is in the path of a projectile at a distance&nbsp;</mtext>
+		<mi>x</mi>
+		<mtext>&nbsp;from the starting point and the collision is elastic then:</mtext>
+	</mrow>
+</math>
+
+<ol>
+<li><math>
+	<mrow>
+		<msub>
+			<mi>t</mi>
+			<mi>f</mi>
+		</msub>
+		<mtext>&nbsp;and&nbsp;</mtext>
+		<mi>H</mi>
+		<mtext>&nbsp;remain the same</mtext>
+		<mo>,</mo>
+		<mtext>distance covered after the collision will be in opposite&nbsp;</mtext>
+		<mi>x</mi>
+		<mtext>&nbsp;direction and same&nbsp;</mtext>
+		<mi>y</mi>
+		<mtext>&nbsp;direction as distance covered before collision</mtext>
+	</mrow>
+</math></li>
+
+<li><math>
+	<mrow>
+		<mtext>If&nbsp;</mtext>
+		<mrow>
+			<mi>x</mi>
+			<mo>&ge;</mo>
+			<mfrac>
+				<mi>R</mi>
+				<mn>2</mn>
+			</mfrac>
+		</mrow>
+		<mtext>&nbsp;landing spot is at distance&nbsp;</mtext>
+		<mrow>
+			<mn>2</mn>
+			<mo>&it;</mo>
+			<mi>x</mi>
+			<mo>&minus;</mo>
+			<mi>R</mi>
+		</mrow>
+		<mtext>&nbsp;from the launch point in the same&nbsp;</mtext>
+		<mi>x</mi>
+		<mtext>&nbsp;direction as initial velocity</mtext>
+	</mrow>
+</math></li>
+
+<li><math>
+	<mrow>
+		<mtext>If&nbsp;</mtext>
+		<mrow>
+			<mi>x</mi>
+			<mo>&le;</mo>
+			<mfrac>
+				<mi>R</mi>
+				<mn>2</mn>
+			</mfrac>
+		</mrow>
+		<mtext>&nbsp;landing spot is at distance&nbsp;</mtext>
+		<mrow>
+			<mi>R</mi>
+			<mo>&minus;</mo>
+			<mn>2</mn>
+			<mo>&it;</mo>
+			<mi>x</mi>
+		</mrow>
+		<mtext>&nbsp;from the launch point in the opposite&nbsp;</mtext>
+		<mi>x</mi>
+		<mtext>&nbsp;direction to initial velocity</mtext>
+	</mrow>
+</math></li>
 </ol>
+</section>
 
-<hr class="Between-red">
+<hr class="Between">
 
-<p class="red-highlight">Projectile on inclined plane</p>
-<p class="green-highlight">For up the plane:</p>
+<section>
+<h2>Projectile on inclined plane</h2>
+
+<section>
+<h3>For up the plane:</h3>
 <ul>
-<li>The angle of inclination is &alpha;</li>
-<li>The acute angle of projectile be &theta;</li>
-<li>t<sub>f</sub> = 2usin&theta;/gcos&alpha;</li>
-<li>R = u<sup>2</sup>[sin(2&theta;+&alpha;)-sin&alpha;]/gcos<sup>2</sup>&alpha;</li>
-<li>R is max when &theta; = (&pi;/4) - (&alpha;/2) and, R<sub>max</sub> = u<sup>2</sup>/g(1+sin&alpha;)</li>
-<li>Max distance from inclined plane = u<sup>2</sup>sin<sup>2</sup>(&theta;)/2gcos&alpha;</li>
+<li><math>
+	<mrow>
+		<mtext>The angle of inclination is&nbsp;</mtext>
+		<mi>&alpha;</mi>
+	</mrow>
+</math></li>
+<li><math>
+	<mrow>
+		<mtext>The acute angle of projectile be&nbsp;</mtext>
+		<mi>&theta;</mi>
+	</mrow>
+</math></li>
+<li><math>
+	<mrow>
+		<msub>
+			<mi>t</mi>
+			<mi>f</mi>
+		</msub>
+		<mo>=</mo>
+		<mfrac>
+			<mrow>
+				<mn>2</mn>
+				<mo>&it;</mo>
+				<mi>u</mi>
+				<mo>&it;</mo>
+				<mrow>
+					<mi>sin</mi>
+					<mo>&af;</mo>
+					<mi>&theta;</mi>
+				</mrow>
+			</mrow>
+			<mrow>
+				<mi>g</mi>
+				<mo>&it;</mo>
+				<mrow>
+					<mi>cos</mi>
+					<mo>&af;</mo>
+					<mi>&alpha;</mi>
+				</mrow>
+			</mrow>
+		</mfrac>
+	</mrow>
+</math></li>
+
+<li><math>
+	<mrow>
+		<mi>R</mi>
+		<mo>=</mo>
+		<mfrac>
+			<mrow>
+				<msup>
+					<mi>u</mi>
+					<mn>2</mn>
+				</msup>
+				<mrow>
+					<mo>[</mo>
+						<mrow>
+							<mi>sin</mi>
+							<mo>&af;</mo>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<mn>2</mn>
+									<mo>&it;</mo>
+									<mi>&theta;</mi>
+									<mo>+</mo>
+									<mi>&alpha;</mi>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+							<mo>&minus;</mo>
+							<mrow>
+								<mi>sin</mi>
+								<mo>&af;</mo>
+								<mi>&alpha;</mi>
+							</mrow>
+						</mrow>
+						<mo>]</mo>
+				</mrow>
+			</mrow>
+			<mrow>
+				<mi>g</mi>
+				<mo>&it;</mo>
+				<msup>
+					<mi>cos</mi>
+					<mn>2</mn>
+				</msup>
+				<mo>&af;</mo>
+				<mi>&alpha;</mi>
+			</mrow>
+		</mfrac>
+	</mrow>
+</math></li>
+
+<li><math>
+	<mrow>
+		<mi>R</mi>
+		<mtext>&nbsp;is max when&nbsp;</mtext>
+		<mi>&theta;</mi>
+		<mo>=</mo>
+				<mfrac>
+					<mi>&pi;</mi>
+					<mn>4</mn>
+				</mfrac>
+			<mo>&minus;</mo>
+					<mfrac>
+						<mi>&alpha;</mi>
+						<mn>2</mn>
+					</mfrac>
+			<mtext>&nbsp;and</mtext>
+			<mo>,</mo>
+			<msub>
+				<mi>R</mi>
+				<mi>max</mi>
+			</msub>
+			<mo>=</mo>
+		<mfrac>
+			<mrow>
+				<msup>
+					<mi>u</mi>
+					<mn>2</mn>
+				</msup>
+			</mrow>
+			<mrow>
+				<mi>g</mi>
+				<mo>&it;</mo>
+				<mrow>
+					<mo>(</mo>
+					<mrow>
+						<mn>1</mn>
+						<mo>+</mo>
+						<mrow>
+							<mi>sin</mi>
+							<mo>&af;</mo>
+							<mi>&alpha;</mi>
+						</mrow>
+					<mo>)</mo>
+				</mrow>
+			</mrow>
+		</mfrac>
+	</mrow>
+</math></li>
+<li><math>
+	<mrow>
+		<mtext>Max distance from inclined plane</mtext>
+		<mo>=</mo>
+		<mrow>
+			<mfrac>
+				<mrow>
+					<msup>
+						<mi>u</mi>
+						<mn>2</mn>
+					</msup>
+					<mo>&it;</mo>
+					<mrow>
+						<msup>
+							<mi>sin</mi>
+							<mn>2</mn>
+						</msup>
+						<mo>&af;</mo>
+						<mi>&theta;</mi>
+					</mrow>
+				</mrow>
+				<mrow>
+					<mn>2</mn>
+					<mo>&it;</mo>
+					<mrow>
+						<mi>g</mi>
+						<mo>&it;</mo>
+						<mrow>
+							<mi>cos</mi>
+							<mo>&af;</mo>
+							<mi>&alpha;</mi>
+						</mrow>
+					</mrow>
+				</mrow>
+			</mfrac>
+		</mrow>
+	</mrow>
+</math></li>
+</ul>
+</section>
+
+<section>
+<p><b>For down the plane replace &alpha; with -&alpha; to get the corrected expressions</b></p>
+</section>
+
+</section>
+
+<hr class="Between">
+
+<section>
+<h2>Man swimming in river</h2>
+<ul>
+	<li><math>
+		<mrow>
+			<msub>
+				<mi class="vector">V</mi>
+				<mi>man</mi>
+			</msub>
+			<mo>=</mo>
+			<mrow>
+				<msub>
+					<mi class="vector">V</mi>
+					<mi>man|river</mi>
+				</msub>
+				<mo>+</mo>
+				<msub>
+					<mi class="vector">V</mi>
+					<mi>river</mi>
+				</msub>
+			</mrow>
+		</mrow>
+	</math></li>
+	<li><span class="define" tabindex="1">
+		<math>
+			<mrow>
+				<mtext>Time taken to cross river</mtext>
+				<mo>,</mo>
+				<mrow>
+					<mi>t</mi>
+					<mo>=</mo>
+					<mfrac>
+						<mi>d</mi>
+						<mrow>
+							<mi>v</mi>
+							<mo>&it;</mo>
+							<mrow>
+								<mi>sin</mi>
+								<mo>&af;</mo>
+								<mi>&theta;</mi>
+							</mrow>
+						</mrow>
+					</mfrac>
+				</mrow>
+				<mo>,</mo>
+				<mrow>
+					<mi>&theta;</mi>
+					<mo>=</mo>
+					<mrow>
+						<mtext>angle between&nbsp;</mtext>
+						<msub>
+							<mi class="vector">V</mi>
+							<mi>man|river</mi>
+						</msub>
+						<mtext>&nbsp;and bank of the river</mtext>
+					</mrow>
+				</mrow>
+			</mrow>
+		</math>
+	<span class="definition">
+		<math>
+			<mrow>
+				<mi>v</mi>
+				<mo>=</mo>
+				<mrow>
+					<mo>|</mo>
+					<mo>&af;</mo>
+					<msub>
+						<mi>V</mi>
+						<mi>man|river</mi>
+					</msub>
+					<mo>|</mo>
+				</mrow>
+			</mrow>
+		</math>
+	</span></span></li>
+	<li><math>
+		<mrow>
+			<mtext>Drift</mtext>
+			<mo>=</mo>
+			<mrow>
+					<mrow>
+						<mrow>
+							<mo>(</mo>
+							<mrow>
+								<mrow>
+									<mi>v</mi>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>cos</mi>
+										<mo>&af;</mo>
+										<mi>&theta;</mi>
+									</mrow>
+								</mrow>
+								<mo>+</mo>
+								<mi>u</mi>
+							</mrow>
+							<mo>)</mo>
+						</mrow>
+						<mo>*</mo>
+						<mi>t</mi>
+					</mrow>
+					<mtext>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mtext>
+					<mrow>
+						<mo>{</mo>
+						<mrow>
+							<mi>u</mi>
+							<mo>=</mo>
+							<mrow>
+								<mo>|</mo>
+								<mo>&af;</mo>
+								<msub>
+									<mi>V</mi>
+									<mi>river</mi>
+								</msub>
+								<mo>|</mo>
+							</mrow>
+						</mrow>
+						<mo>}</mo>
+					</mrow>
+			</mrow>
+		</mrow>
+	</math></li>
+	<li><math>
+		<mrow>
+			<mtext>For drift to be zero</mtext>
+			<mo>,</mo>
+			<mrow>
+				<mrow>
+					<mi>cos</mi>
+					<mo>&af;</mo>
+					<mi>&theta;</mi>
+				</mrow>
+				<mo>=</mo>
+				<mrow>
+					<mfrac>
+						<mrow>
+							<mo>-</mo>
+							<mi>u</mi>
+						</mrow>
+						<mi>v</mi>
+					</mfrac>
+					<mo>,</mo>
+					<mrow>
+						<mi>t</mi>
+						<mo>=</mo>
+						<mfrac>
+							<mi>d</mi>
+							<msqrt>
+								<mrow>
+									<msup>
+										<mi>v</mi>
+										<mn>2</mn>
+									</msup>
+									<mo>-</mo>
+									<msup>
+										<mi>u</mi>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+							</msqrt>
+						</mfrac>
+					</mrow>
+				</mrow>
+			</mrow>
+		</mrow>
+	</math></li>
+	<li><math>
+		<mrow>
+			<mrow>
+				<mtext>If&nbsp;</mtext>
+				<mrow>
+					<mi>v</mi>
+					<mo>&lt;</mo>
+					<mi>u</mi>
+				</mrow>
+				<mtext>&nbsp;minimum non-zero drift is when</mtext>
+				<mo>,</mo>
+			</mrow>
+			<mrow>
+				<mrow>
+					<mi>cos</mi>
+					<mo>&af;</mo>
+					<mi>&theta;</mi>
+				</mrow>
+				<mo>=</mo>
+				<mfrac>
+					<mrow>
+						<mo>&minus;</mo>
+						<mi>v</mi>
+					</mrow>
+					<mi>u</mi>
+				</mfrac>
+			</mrow>
+		</mrow>
+	</math></li>
+	<li><math>
+		<mrow>
+			<mtext>For swimming in a specific direction</mtext>
+			<mo>,</mo>
+		</mrow>
+		<mrow class="Row-gap"></mrow>
+		<mrow>
+			<mtext>Angle of&nbsp;</mtext>
+			<msub><mi class="vector">V</mi><mi>man|river</mi></msub>
+			<mtext>with direction of swim be&nbsp;</mtext>
+			<mi>&alpha;</mi>
+		</mrow>
+		<mrow class="Row-gap"></mrow>
+		<mrow>
+		<mrow>
+				<mrow>
+					<mi>v</mi>
+					<mo>&it;</mo>
+					<mrow>
+						<mi>sin</mi>
+						<mo>&af;</mo>
+						<mi>&alpha;</mi>
+					</mrow>
+				</mrow>
+				<mo>=</mo>
+				<mrow>
+					<mi>u</mi>
+					<mo>&it;</mo>
+					<mrow>
+						<mi>sin</mi>
+						<mo>&af;</mo>
+						<mi>&theta;</mi>
+					</mrow>
+			</mrow>
+			<mo>,</mo>
+			<mi>&theta;</mi>
+			<mtext>&nbsp;is angle of direction of swim with river bank</mtext>
+		</mrow>
+	</math></li>
+</ul>
+</section>
+
+<hr class="Between">
+
+<section>
+<h2>Minimum distance between 2 moving bodies:</h2>
+<math>
+	<mrow>
+		<mtext>Initial distance&nbsp;</mtext>
+		<mo>=</mo>
+		<mi>L</mi>
+	</mrow>
+	<mrow class="Row-gap"></mrow>
+	<mrow>
+		<mrow>
+			<mtext>Angle made between&nbsp;</mtext>
+			<msub>
+				<mi class="vector">V</mi>
+				<mi>rel</mi>
+			</msub>
+			<mtext>and initial displacement</mtext>
+		</mrow>
+		<mo>=</mo>
+		<mi>&theta;</mi>
+	</mrow>
+	<mrow class="Row-gap"></mrow>
+	<mrow>
+		<mtext>Angles made by the moving bodies be&nbsp;</mtext>
+		<mi>&alpha;</mi>
+		<mtext>&nbsp;and&nbsp;</mtext>
+		<mi>&beta;</mi>
+		<mtext>&nbsp;and</mtext>
+		<mo>,</mo>
+		<mtext>velocities be&nbsp;</mtext>
+		<mrow>
+			<msub>
+				<mi class="vector">V</mi>
+				<mi>a</mi>
+			</msub>
+			<mo>,</mo>
+			<msub>
+				<mi class="vector">V</mi>
+				<mi>b</mi>
+			</msub>
+		</mrow>
+	</mrow>
+</math>
+
+<ul>
+<li><math>
+	<mrow>
+		<mtext>Minimum distance</mtext>
+		<mo>=</mo>
+		<mrow>
+			<mi>L</mi>
+			<mrow>
+				<mi>sin</mi>
+				<mo>&af;</mo>
+				<mi>&theta;</mi>
+			</mrow>
+		</mrow>
+	</mrow>
+</math></li>
+<li><math>
+	<mrow>
+		<mrow>
+			<mo>|</mo>
+			<mo>&af;</mo>
+			<msub>
+				<mi>V</mi>
+				<mi>rel</mi>
+			</msub>
+			<mo>|</mo>
+		</mrow>
+		<mo>=</mo>
+		<msqrt>
+			<mrow>
+				<msup>
+					<mrow>
+						<mo>|</mo>
+						<mo>&af;</mo>
+						<msub>
+							<mi>V</mi>
+							<mi>a</mi>
+						</msub>
+						<mo>|</mo>
+					</mrow>
+					<mn>2</mn>
+				</msup>
+				<mo>+</mo>
+				<msup>
+					<mrow>
+						<mo>|</mo>
+						<mo>&af;</mo>
+						<msub>
+							<mi>V</mi>
+							<mi>b</mi>
+						</msub>
+						<mo>|</mo>
+					</mrow>
+					<mn>2</mn>
+				</msup>
+				<mo>+</mo>
+				<mrow>
+					<mn>2</mn>
+					<mo>&it;</mo>
+					<mrow>
+						<mo>|</mo>
+						<mo>&af;</mo>
+						<msub>
+							<mi>V</mi>
+							<mi>a</mi>
+						</msub>
+						<mo>|</mo>
+					</mrow>
+					<mo>&it;</mo>
+					<mrow>
+						<mo>|</mo>
+						<mo>&af;</mo>
+						<msub>
+							<mi>V</mi>
+							<mi>b</mi>
+						</msub>
+						<mo>|</mo>
+					</mrow>
+					<mo>&it;</mo>
+					<mrow>
+						<mi>cos</mi>
+						<mo>&af;</mo>
+						<mrow>
+							<mo>(</mo>
+							<mrow>
+								<mi>&alpha;</mi>
+								<mo>+</mo>
+								<mi>&beta;</mi>
+							</mrow>
+							<mo>)</mo>
+						</mrow>
+					</mrow>
+				</mrow>
+			</mrow>
+		</msqrt>
+	</mrow>
+</math></li>
+<li><math>
+	<mrow>
+		<mtext>Time to reach minimum separation is&nbsp;</mtext>
+		<mfrac>
+			<mrow>
+				<mi>L</mi>
+				<mrow>
+					<mi>cos</mi>
+					<mo>&af;</mo>
+					<mi>&theta;</mi>
+				</mrow>
+			</mrow>
+			<mrow>
+				<mo>|</mo>
+				<mo>&af;</mo>
+				<msub>
+					<mi>V</mi>
+					<mi>rel</mi>
+				</msub>
+				<mo>|</mo>
+			</mrow>
+		</mfrac>
+	</mrow>
+</math></li>
 </ul>
 
-<p style="font-weight:bold;font-size:14px">For down the plane replace &alpha; with -&alpha; to get the corrected expressions</p>
-
-<hr class="Between-red">
-
-<p class="red-highlight">Man swimming in river</p>
-<ul>
-	<li>V&#773;<sub>man</sub> = V&#773;<sub>man|river</sub> + V&#773;<sub>river</sub> {v = |V<sub>man|river</sub>|}</li>
-	<li>Time taken to cross river, t = d/vsin&theta; , &theta; = angle between V&#773;<sub>man|river</sub> and bank of the river</li>
-	<li>Drift = (vcos&theta; + u)*t (u=|V<sub>river</sub>|)</li>
-	<li>For drift to be zero , cos&theta; = -u/v , t = d/sqrt(v<sup>2</sup> - u<sup>2</sup>)</li>
-	<li>If v&lt;u minimum non-zero drift is when cos&theta; = -v/u</li>
-	<li>For swimming in a specific direction,<br>
-			Angle of V&#773;<sub>man|river</sub> with direction of swim be &alpha;<br>
-			vsin&alpha; = usin&theta; , &theta; is angle of direction of swim with river bank</li>
-</ul>
-<hr class="Between-red">
-
-<p class="red-highlight">Minimum distance between 2 moving bodies:</p>
-<p>
-	Initial distance = L<br>
-	Angle made between V&#773;<sub>rel</sub> and initial displacement = &theta;<br>
-	Angles made by the moving bodies be &alpha; & &beta; and velocities be V&#773;<sub>a</sub> , V&#773;<sub>b</sub>
-</p>
+<section>
+<h3>For collision:</h3>
 
 <ul>
-<li>Minimum distance = Lsin&theta;</li>
-<li>|V<sub>rel</sub>| = sqrt(|V<sub>a</sub>|^2 + |V<sub>b</sub>|^2 +2|V<sub>a</sub>||V<sub>b</sub>|cos(&alpha; + &beta;))</li>
-<li>Time to reach minimum separation is Lcos&theta;/|V<sub>rel</sub>|</li>
+<li><math>
+	<mrow>
+		<mrow>
+			<mrow>
+				<mo>|</mo>
+				<mo>&af;</mo>
+				<msub>
+					<mi>V</mi>
+					<mi>a</mi>
+				</msub>
+				<mo>|</mo>
+			</mrow>
+			<mo>&it;</mo>
+			<mrow>
+				<mi>sin</mi>
+				<mo>&af;</mo>
+				<mi>&alpha;</mi>
+			</mrow>
+		</mrow>
+		<mo>=</mo>
+		<mrow>
+			<mrow>
+				<mo>|</mo>
+				<mo>&af;</mo>
+				<msub>
+					<mi>V</mi>
+					<mi>b</mi>
+				</msub>
+				<mo>|</mo>
+			</mrow>
+			<mo>&it;</mo>
+			<mrow>
+				<mi>sin</mi>
+				<mo>&af;</mo>
+				<mi>&beta;</mi>
+			</mrow>
+		</mrow>
+	</mrow>
+</math></li>
+<li><math>
+	<mrow>
+		<mtext>Time taken to collide</mtext>
+		<mo>=</mo>
+		<mfrac>
+			<mi>L</mi>
+			<mrow>
+				<mrow>
+					<mrow>
+						<mo>|</mo>
+						<mo>&af;</mo>
+						<msub>
+							<mi>V</mi>
+							<mi>a</mi>
+						</msub>
+						<mo>|</mo>
+					</mrow>
+					<mo>&it;</mo>
+					<mrow>
+						<mi>cos</mi>
+						<mo>&af;</mo>
+						<mi>&alpha;</mi>
+					</mrow>
+				</mrow>
+				<mo>+</mo>
+				<mrow>
+					<mrow>
+						<mo>|</mo>
+						<mo>&af;</mo>
+						<msub>
+							<mi>V</mi>
+							<mi>b</mi>
+						</msub>
+						<mo>|</mo>
+					</mrow>
+					<mo>&it;</mo>
+					<mrow>
+						<mi>cos</mi>
+						<mo>&af;</mo>
+						<mi>&beta;</mi>
+					</mrow>
+				</mrow>
+			</mrow>
+		</mfrac>
+	</mrow>
+</math></li>
 </ul>
+</section>
 
-<p class="green-highlight">For collision:</p>
-<ul>
-	<li>|V<sub>a</sub>|sin&alpha; = |V<sub>b</sub>|sin&beta;</li>
-	<li>Time taken to collide = L/(|V<sub>a</sub>|&alpha; + |V<sub>b</sub>|cos&beta;)</li>
-</ul>
+</section>
 
-<hr class="Between-red">
+<hr class="Between">
 
-<p class="red-highlight">Floor is being accelerated:</p>
-<p class="green-highlight">Up:</p>
-<p>
-N = m(g+a)
-</p>
+<section>
+<h2>Floor is being accelerated:</h2>
 
-<p class="green-highlight">Down:</p>
-<p>
-N = m(g-a)
-</p>
+<section>
+<h3>Up:</h3>
+<math>
+	<mrow>
+		<mi>N</mi>
+		<mo>=</mo>
+		<mrow>
+			<mi>m</mi>
+			<mo>&it;</mo>
+			<mrow>
+				<mo>(</mo>
+				<mrow>
+					<mtext>&nbsp;</mtext>
+					<mi>g</mi>
+					<mo>+</mo>
+					<mi>a</mi>
+					<mtext>&nbsp;</mtext>
+				</mrow>
+				<mo>)</mo>
+			</mrow>
+		</mrow>
+	</mrow>
+</math>
+</section>
 
-<p class="purple-highlight">If a&gt;g:</p>
+<section>
+<h3>Down:</h3>
+<math>
+	<mrow>
+		<mi>N</mi>
+		<mo>=</mo>
+		<mrow>
+			<mi>m</mi>
+			<mo>&it;</mo>
+			<mrow>
+				<mo>(</mo>
+				<mrow>
+					<mtext>&nbsp;</mtext>
+					<mi>g</mi>
+					<mo>&minus;</mo>
+					<mi>a</mi>
+					<mtext>&nbsp;</mtext>
+				</mrow>
+				<mo>)</mo>
+			</mrow>
+		</mrow>
+	</mrow>
+</math>
+
+<section>
+<h4>If a&gt;g:</h4>
 <p>
 Lose contact with floor
 </p>
 
-<p class="cornsilk-highlight">If ceiling is accelerating with floor:</p>
-<p>
-Will hit ceiling if enough time and N = m(a-g)
-</p>
+<section>
+<h5>If ceiling is accelerating with floor:</h5>
+<math>
+	<mrow>
+		<mtext>Will hit ceiling if enough time and&nbsp;</mtext>
+		<mrow>
+			<mi>N</mi>
+			<mo>=</mo>
+			<mrow>
+				<mi>m</mi>
+				<mo>&it;</mo>
+				<mrow>
+					<mo>(</mo>
+					<mrow>
+						<mtext>&nbsp;</mtext>
+						<mi>a</mi>
+						<mo>&minus;</mo>
+						<mi>g</mi>
+						<mtext>&nbsp;</mtext>
+					</mrow>
+					<mo>)</mo>
+				</mrow>
+			</mrow>
+		</mrow>
+	</mrow>
+</math>
+</section>
 
-<p class="cornsilk-highlight">If no ceiling or fixed ceiling:</p>
+<section>
+<h5>If no ceiling or fixed ceiling:</h5>
 <p>
 Will free fall
 </p>
+</section>
 
-<p class="cornsilk-highlight">If a&gt;g and bound to the floor:</p>
-<p>
-Force felt by binding object = m(a-g)
-</p>
+<section>
+<h5>If a&gt;g and bound to the floor:</h5>
+<math>
+	<mrow>
+		<mtext>Force felt by binding object</mtext>
+		<mo>=</mo>
+		<mrow>
+			<mi>m</mi>
+			<mo>&it;</mo>
+			<mrow>
+				<mo>(</mo>
+				<mrow>
+					<mtext>&nbsp;</mtext>
+					<mi>a</mi>
+					<mo>&minus;</mo>
+					<mi>g</mi>
+					<mtext>&nbsp;</mtext>
+				</mrow>
+				<mo>)</mo>
+			</mrow>
+		</mrow>
+	</mrow>
+</math>
+</section>
 
-<hr class="Between-red">
+</section>
 
-<p class="red-highlight">Motion of accelerating bodies with forces:</p>
-<p class="green-highlight">If no friction:</p>
-<p>
-Only bodies with external force will move, use standard kinetics and a = F/m
-</p>
+</section>
 
-<hr class="Between-light-blue">
+</section>
 
-<div class="middle-topic">
-<a href="Solving.html">&#11207;Solving</a>
-</div>
+<hr class="Between">
+
+<section>
+<h2>Motion of accelerating bodies with forces:</h2>
+
+<section>
+<h3>If no friction:</h3>
+<math>
+	<mrow>
+		<mtext>Only bodies with external force will move</mtext>
+		<mo>,</mo>
+		<mtext>use standard kinetics and&nbsp;</mtext>
+		<mrow>
+			<mi>a</mi>
+			<mo>=</mo>
+			<mfrac>
+				<mi>F</mi>
+				<mi>m</mi>
+			</mfrac>
+		</mrow>
+	</mrow>
+</math>
+</section>
+
+</section>
+
+</main>
+
+<hr>
+
+<footer>
+	<nav>
+		<a href="Solving.html">&#11207;Solving</a>
+		<address>Contact:<a href="mailto:zagpthefirst@gmail.com">zagpthefirst@gmail.com</a></address>
+	</nav>
+</footer>
 </body>
 </html>

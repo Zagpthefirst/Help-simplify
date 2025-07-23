@@ -9,17 +9,20 @@
 </head>
 <body>
 <header>
-	<div><a href="../index.html"><span class="define"><img src="../Pictures/Icon.png"><span class="header-tooltip">Homepage</span></span></a></div>
-	<div><input type="search" name="nav-search" placeholder="Search"></div>
+	<div><a href="../index.html"><span class="define"><img src="../Pictures/Icon.png" aria-label="link to the website's homepage"><span class="header-tooltip">Homepage</span></span></a></div>
+	<div><search><form><input type="search" name="nav-search" placeholder="Search"></form></search></div>
 	<div class="subs">
-		<div><a href="../Navigation pages/Biology/Navigation.html"><span class="define"><img src="../Pictures/B.svg"><span class="header-tooltip">Biology</span></span></a></div>
-		<div><a href="../Navigation pages/Physics/Navigation.html"><span class="define"><img src="../Pictures/P.svg"><span class="header-tooltip">Physics</span></span></a></div>
-		<div><a href="../Navigation pages/Chemistry/Navigation.html"><span class="define"><img src="../Pictures/C.svg"><span class="header-tooltip">Chemistry</span></span></a></div>
-		<div><a href="../Navigation pages/Maths/Navigation.html"><span class="define"><img src="../Pictures/M.svg"><span class="header-tooltip">Maths</span></span></a></div>
-		<div><a href="../Navigation pages/Others/List of others.html"><span class="define"><img src="../Pictures/O.svg"><span class="header-tooltip">Other</span></span></a></div>
+		<div><a href="../Navigation pages/Biology/Navigation.html"><span class="define"><img src="../Pictures/B.svg" aria-label="link to the biology homepage"><span class="header-tooltip">Biology</span></span></a></div>
+		<div><a href="../Navigation pages/Physics/Navigation.html"><span class="define"><img src="../Pictures/P.svg" aria-label="link to the physics homepage"><span class="header-tooltip">Physics</span></span></a></div>
+		<div><a href="../Navigation pages/Chemistry/Navigation.html"><span class="define"><img src="../Pictures/C.svg" aria-label="link to the chemistry homepage"><span class="header-tooltip">Chemistry</span></span></a></div>
+		<div><a href="../Navigation pages/Maths/Navigation.html"><span class="define"><img src="../Pictures/M.svg" aria-label="link to the maths homepage"><span class="header-tooltip">Maths</span></span></a></div>
+		<div><a href="../Navigation pages/Others/List of others.html"><span class="define"><img src="../Pictures/O.svg" aria-label="link to the other things page"><span class="header-tooltip">Other</span></span></a></div>
 		</div>
 </header>
-	<p class="light-blue-highlight">Properties of operators and functions:</p>
+
+<main>
+<section>
+	<h1>Properties of operators and functions:</h1>
 	<ul>
 		<li>Set difference is not commutative</li>
 		<li>Union,intersection,symmetric difference are commutative and associative</li>
@@ -28,24 +31,116 @@
 		<li>Squaring can lead to extraneous roots, dividing can lead to loss of roots</li>
 		<li>Sigma(&Sigma;) is a linear operator, it is not distributive over multiplication or division</li>
 		<li>Factorial(&excl;) is not distributive over addition or multiplication</li>
-		<li><span class="define">n!|&prod;(k consecutive whole numbers)<span class="definition">a|b means "a divides b"</span></span></li>
-		<li>If p is prime then p|&SquareSubset;p,r&SquareSuperset;, &forall; r&isin;N , r&lt;p</li>
+		<li><math>
+			<mrow>
+				<mrow>
+					<mi>n</mi>
+					<mo>!</mo>
+				</mrow>
+				<mo>|</mo>
+				<mrow>
+					<mo>&prod;</mo>
+					<mo>&af;</mo>
+					<mrow>
+						<mo>(</mo>
+						<mrow>
+							<mi>k</mi>
+							<mtext>&nbsp;consecutive whole numbers</mtext>
+						</mrow>
+						<mo>)</mo>
+					</mrow>
+				</mrow>
+			</mrow>
+		</math></li>
+		<li><math>
+			<mrow>
+				<mtext>If&nbsp;</mtext>
+				<mi>p</mi>
+				<mtext>&nbsp;is prime then&nbsp;</mtext>
+				<mrow>
+					<mi>p</mi>
+					<mo>|</mo>
+					<mrow>
+						<mo>[</mo>
+						<mrow>
+							<mi>p</mi>
+							<mo>,</mo>
+							<mi>r</mi>
+						</mrow>
+						<mo>]</mo>
+					</mrow>
+				</mrow>
+				<mo>,</mo>
+				<mo>&forall;</mo>
+				<mtext>&nbsp;</mtext>
+				<mrow>
+					<mrow>
+						<mi>r</mi>
+						<mo>&isin;</mo>
+						<mi>N</mi>
+					</mrow>
+					<mo>,</mo>
+					<mrow>
+						<mi>r</mi>
+						<mo>&lt;</mo>
+						<mi>p</mi>
+					</mrow>
+				</mrow>
+			</mrow>
+		</math></li>
 	</ul>
-	
-	<hr class="Between-light-blue">
+</section>
 
-	<p class="light-blue-highlight">Properties of non-functions</p>
-	<ul>
-		<li>&fnof;(x)/(x&minus;k) has remainder of &fnof;(k)
-		<li>Odd degree polynomials have at least 1 real root</li>
-		<li>Roots with multiplicity = n exist as roots in the first n&minus;1 derivative</li>
-		<li>Between 2 roots of a polynomial, there exists at least 1 root of the derivative of the polynomial</li>
-		<li>And rule and or rule are applicable for any number of tasks</li>
-	</ul>
+<hr>
 
-<hr class="Between-light-blue">
+<section>
+<h1>Properties of non-functions</h1>
+<ul>
+<li><math>
+	<mrow>
+			<mfrac>
+				<mrow>
+					<mi>f</mi>
+					<mo>&af;</mo>
+					<mrow>
+						<mo>(</mo>
+						<mi>x</mi>
+						<mo>)</mo>
+					</mrow>
+				</mrow>
+				<mrow>
+					<mi>x</mi>
+					<mo>&minus;</mo>
+					<mi>k</mi>
+				</mrow>
+			</mfrac>
+			<mtext>&nbsp;has remainder of&nbsp;</mtext>
+			<mrow>
+				<mi>f</mi>
+				<mo>&af;</mo>
+				<mrow>
+					<mo>(</mo>
+					<mi>k</mi>
+					<mo>)</mo>
+				</mrow>
+		</mrow>
+	</mrow>
+</math></li>
+<li>Odd degree polynomials have at least 1 real root</li>
+<li>Roots with multiplicity of n exist as roots in the first n&minus;1 derivatives</li>
+<li>Between 2 roots of a polynomial, there exists at least 1 root of the derivative of the polynomial</li>
+<li>And rule and or rule are applicable for any number of tasks</li>
+</ul>
+</section>
+</main>
 
-<div class="middle-topic">
-	<a href="Conditional.html">&#11207;Conditional</a>
+<hr>
+
+<footer>
+	<nav>
+		<a href="Conditional.html">&#11207;Conditional</a>
+		<address>Contact:<a href="mailto:zagpthefirst@gmail.com">zagpthefirst@gmail.com</a></address>
+	</nav>
+</footer>
 </body>
 </html>
