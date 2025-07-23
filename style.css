@@ -7,41 +7,42 @@ body{
 	padding-top:60px
 }
 
-.light-blue-highlight,.red-highlight,.green-highlight,.purple-highlight,.cornsilk-highlight,.antiquewhite-highlight,.dark-teal-highlight,.lightgray-highlight,.yellow-highlight,.white-highlight,.un-highlight{
+h1,h2,h3,h4,h5,h6,.dark-teal-highlight,.lightgray-highlight,.yellow-highlight,.white-highlight,.un-highlight{
 	font-weight:bold;
 	width:fit-content;
 	margin-left:0;
+	clear:both;
 }
 
-.cornsilk-highlight,.antiquewhite-highlight,.dark-teal-highlight,.lightgray-highlight,.yellow-highlight,.white-highlight,.un-highlight{
+h5,h6,.dark-teal-highlight,.lightgray-highlight,.yellow-highlight,.white-highlight,.un-highlight{
 	font-size:12px;
 }
 
-.light-blue-highlight{
+h1{
 	font-size :20px;
 	background-color:rgba(0,200,200,0.08);
 }
 
-.red-highlight{
+h2{
 	font-size:18px;
 	background-color:rgba(255,120,100,0.1);
 }
 
-.green-highlight{
+h3{
 	font-size:16px;
 	background-color:rgba(0,255,0,0.1);
 }
 
-.purple-highlight{
+h4{
 	font-size:14px;
 	background-color:rgba(255,25,255,0.1);
 }
 
-.cornsilk-highlight{
+h5{
 	background-color:cornsilk;
 }
 
-.antiquewhite-highlight{
+h6{
 	background-color:antiquewhite;
 }
 
@@ -70,22 +71,27 @@ margin-left:10px;
 line-height:19px;
 }
 
-.Between-light-blue,.Between-red{
-	margin:16px -4px 20px;
+section{
+	width:fit-content;
 }
 
-.Between-red{
-	border-top:1px dashed rgba(100,100,100,1);
-}
-
-.Between-light-blue{
+hr{
 	border-top:1px solid black;
+}
+
+hr,hr.Between{
+	margin:16px -4px 20px;
+	clear:both;
+}
+
+hr.Between{
+	border-top:1px dashed rgb(100,100,100);
 }
 
 table{
 	border-collapse:collapse;
 	border:1px solid black;
-	}
+}
 	
 td.left,td.center,th,td.two-column-long{
 	border-bottom:1px solid black;
@@ -99,12 +105,8 @@ td.two-column,td.two-column-long{
 	padding-right:40px;
 }
 
-div.Half-Half{
+.inline-block,.inline{
 	display:inline-block;
-	width:45%;
-	height:fit-content;
-	margin-top:10px;
-	margin-bottom:10px;
 }
 
 div>a{
@@ -114,15 +116,27 @@ div>a{
 
 a{
 	margin:10px 0;
-	text-decoration:none;
+	text-decoration-color:gray;
 }
 
-a:visited,a:active{
+a:hover,a:focus{
+	font-weight:bold;
+}
+
+:focus-visible{
+	border:2px solid black;	
+}
+
+a:visited{
 	color:rgb(0,0,238);
 }
 
 :target{
-	background-color:rgb(194, 3, 194);
+	background-clip:content-box;
+	background-color:rgb(161, 92, 226);
+	padding-top:64px;
+	margin-top:-64px;
+	overflow:hidden;
 }
 
 dd{
@@ -161,7 +175,7 @@ span.hover{
 	opacity:0.05;
 }
 
-span.hover:hover{
+span.hover:hover,span.hover:focus{
 	opacity:1;
 	cursor:default;
 }
@@ -199,7 +213,7 @@ span.define>span.header-tooltip{
 	font-weight:400;
 	font-size:14px;
 	background-color:rgb(40, 40, 40);
-	color:#fff;
+	color:white;
 	text-align:center;
 	border-radius:10px;
 	padding:5px 5px;
@@ -218,7 +232,7 @@ span.define>span.header-tooltip{
 	top:100%
 }
 
-.define:hover>.definition,.define:hover>.definition-top,span.define:active>img.hang,span.define:hover>span.header-tooltip{
+.define:focus>.definition,.define:focus>.definition-top,span.define:focus>img.hang,header a:focus span.define>span.header-tooltip,.define:hover>.definition,.define:hover>.definition-top,span.define:active>img.hang,span.define:hover>span.header-tooltip{
   opacity:1;
 }
 
@@ -236,11 +250,11 @@ figure.lots-of-pics>img{
 	transition:width 0.3s;
 }
 
-figure.lots-of-pics>img:hover{
+figure.lots-of-pics>img:hover,figure.lots-of-pics>img:focus{
 	width:500px;
 }
 
-figure.lots-of-pics>img.vertebrata:hover{
+figure.lots-of-pics>img.vertebrata:hover,figure.lots-of-pics>img.vertebrata:focus{
 	width:700px;
 }
 
@@ -259,6 +273,22 @@ math{
 	margin:10px 0 10px 8px;
 	margin-left:8px;
 	display:block;
+}
+
+mrow.row-gap{
+	margin:3px 0;
+}
+
+mrow.Row-gap{
+	margin:6px;
+}
+
+math mfrac{
+	font-size:20px;
+}
+
+math mfrac.normal{
+	font-size:14px;
 }
 
 math munderover{
@@ -322,7 +352,11 @@ div.index-navigation>div.other{
 	grid-column:1 / 3;
 }
 
-div.Bio-navi{
+.vector{
+	text-decoration:overline;
+}
+
+nav.Bio-navi,nav.Chem-navi{
 	display:grid;
 	grid-template-columns:200px 200px 200px 200px;
 	width:fit-content;
@@ -330,37 +364,45 @@ div.Bio-navi{
 }
 
 @media(max-width:400px){
-	div.Bio-navi{
+	nav.Bio-navi,nav.Chem-navi{
 	grid-template-columns:200px;
 	}
 }
 
 @media(max-width:600px) and (min-width:401px){
-	div.Bio-navi{
+	nav.Bio-navi,nav.Chem-navi{
 		grid-template-columns:200px 200px;
 	}
 }
 
 @media(max-width:800px) and (min-width:601px){
-	div.Bio-navi{
+	nav.Bio-navi,nav.Chem-navi{
 		grid-template-columns:200px 200px 200px;
 	}
 }
 
 @media(min-width:801px) and (max-width:1000px){
-	div.Bio-navi{
+	nav.Bio-navi,nav.Chem-navi{
 		grid-template-columns:200px 200px 200px 200px;
 	}
 }
 
 @media(min-width:1001px){
-	div.Bio-navi{
+	nav.Bio-navi,nav.Chem-navi{
 		grid-template-columns:200px 200px 200px 200px 200px;
 	}
 }
 
-div.Bio-navi>a,div.Chem-navi>a,div.Maths-navi>a,div.Physics-navi>a{
+nav.Bio-navi,a{
 	margin:10px 0 0 0;
+}
+
+nav.Chem-navi{
+	margin:0 0 0 20px;
+}
+
+nav.Chem-navi>a{
+	margin:0 0 10px 0;
 }
 
 header{
@@ -384,7 +426,7 @@ header>div>a>span.define>img,header>div>div>a>span.define>img{
 	height:20px;
 }
 
-header>div>input{
+header>div>search>form>input{
 	width:500px;
 	border:none;
 	border-radius:20px;
@@ -396,25 +438,38 @@ header>div.subs{
 }
 
 div.first-topic{
-	text-align:right;
+	justify-content:right;
 }
 
-div.middle-topic{
+div.middle-topic,footer>nav{
 	display:flex;
 	justify-content:space-between;
+	width:100%;
 }
 
-div.first-topic,div.middle-topic{
+div.first-topic,div.middle-topic,footer{
 	margin-top:-10px;
 	margin-bottom:20px;
 }
 
-div.first-topic>a,div.middle-topic>a{
-	display:inline-block;
+img{
+	max-width:100%;
+}
+
+footer>nav>address{
+	margin:10px 0;
+}
+
+address{
+	margin:10px 0 0 0;
 }
 
 img.border{
 	border:1px solid black;
+}
+
+td.border-bottom{
+	border-bottom:1px solid black;
 }
 
 img.height{
@@ -459,7 +514,7 @@ div.punnet{
 div.punnet-empty{
 	margin-bottom:0px;
 	border-bottom:1px solid black;
-	border-right: 1px solid black;
+	border-right:1px solid black;
 }
 
 div.punnet-row{
@@ -484,10 +539,110 @@ div.punnet-column>span.define>span.definition{
 
 div.punnet>div>p{
 	margin-left:0;
-	margin-top: 0;
+	margin-top:0;
 }
 
 ul.less-margin{
 	padding-left:30px;
 	margin-top:-6px;
+}
+
+section.Coin-flip>button{
+	background-color:lightskyblue;
+	padding:5px 8px;
+	font-size:20px;
+	border:1px solid black;
+}
+
+aside{
+	float:right;
+	width:160px;
+	font-size:12px;
+	font-style:italic;
+	padding:5px 5px 5px 15px;
+}
+
+section.aside{
+	position:relative;
+}
+
+section.aside>aside{
+	position:absolute;
+	right:0%;
+	top:0%;
+	width:200px;
+	transform:translateX(110%) translateY(70%);
+}
+
+aside.math{
+	margin-top:-50px;
+	margin-right:-200px
+}
+
+aside.mather{
+	margin:-40px -200px 0 0;
+}
+
+aside.large{
+	width:25%;
+}
+
+aside,aside.left{
+	background-color:lightgray;
+}
+
+.font-20{
+	font-size:20px;
+}
+
+.font-26{
+	font-size:26px;
+}
+
+aside.chem{
+ 	min-width:260px;
+	margin-left:30px;
+}
+
+aside.left{
+	float:left;
+}
+
+.flex-cyclic-chem{
+	width:45%;
+}
+
+.flex-cyclic-chem,.flex,.flex-vertical{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.flex{
+	width:80%;
+}
+
+.flex-vertical{
+	flex-direction:column;
+	width:100%;
+}
+
+section.cyclic-chem{
+	width:60%;
+}
+
+aside.Comparative-anatomy{
+	position:absolute;
+	left:260px;
+	top:80px;
+	width:200px;
+}
+
+li{
+	width:fit-content;
+}
+
+p.navi-text{
+	font-weight:bold;
+	margin:0 0;
 }
