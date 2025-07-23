@@ -295,37 +295,6 @@ math munderover{
 	margin:0 15px;
 }
 
-span.reagent{
-	grid-column:1 / 4;
-	font-size:10px;
-}
-
-span.reactant{
-	position:relative;
-}
-
-span.reactant-info,span.reactant-info-compound{
-	position:absolute;
-	left:50%;
-	transform:translateX(-50%);
-}
-
-span.reactant-info{
-	top:20px;
-}
-
-span.reactant-info-compound{
-	top:24px;
-}
-
-span.wonky-arrow{
-	align-self:stretch;
-}
-
-hr.info{
-	margin-top:40px;
-}
-
 div.index-navigation{
 	display:grid;
 	grid-template-columns:380px 380px;
@@ -417,7 +386,6 @@ header{
 	justify-content:space-between;
 	padding:0 20px;
 	align-items:center;
-	align-content:center;
 	justify-items:center;
 	z-index:1000;
 }
@@ -426,8 +394,26 @@ header>div>a>span.define>img,header>div>div>a>span.define>img{
 	height:20px;
 }
 
+header>div:first-child,header>div:last-child{
+	flex-shrink:0;
+}
+
+header>div:nth-child(2){
+	flex:1;
+	width:0;
+}
+
+header>div>search>form{
+	display:flex;
+	justify-content:center;
+}
+
 header>div>search>form>input{
-	width:500px;
+	width:0;
+	flex:1;
+	padding:5px;
+	margin-top:5px;
+	max-width:500px;
 	border:none;
 	border-radius:20px;
 }
@@ -504,42 +490,25 @@ img.claustrophobia{
 	padding:5px 8px;
 }
 
-div.punnet{
-	display:grid;
-	grid-template-columns:100px 350px 320px;
-	border:1px solid black;
-	width:fit-content;
-}
-
-div.punnet-empty{
-	margin-bottom:0px;
-	border-bottom:1px solid black;
+thead.punnet>tr>th:first-child{
 	border-right:1px solid black;
 }
 
-div.punnet-row{
-	margin-bottom:0px;
-	border-bottom:1px solid black;
-}
-
-div.punnet-row>span.define>span.definition{
-	margin-left:-40px;
-	width:fit-content
-}
-
-div.punnet-column{
+tbody.punnet>tr>td:first-child{
 	border-right:1px solid black;
-	margin-left:5px;
+	padding-right:20px;
 }
 
-div.punnet-column>span.define>span.definition{
+tbody.punnet>tr>td:first-child>span.define>span.definition{
 	margin-left:-25px;
-	width:fit-content
 }
 
-div.punnet>div>p{
-	margin-left:0;
-	margin-top:0;
+tbody.punnet>tr>td:nth-child(2){
+	padding-right:20px;
+}
+
+tr.gap>td{
+	padding:10px 0;
 }
 
 ul.less-margin{
